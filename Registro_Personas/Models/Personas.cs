@@ -24,6 +24,6 @@ public class Personas
         [Required(ErrorMessage ="La Fecha es requerido")]
         public DateTimeOffset FechaNacimiento { get; set; }
 
-        [ForeignKey("OcupacionId")]
+        [Required(ErrorMessage = "Se requiere la ocupacion")]
         public int OcupacionId { get; set; }
 }
